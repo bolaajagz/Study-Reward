@@ -1,6 +1,7 @@
 import ButtonDefault from "@src/components/ButtonDefault";
 import Image from "next/image";
 import { auth } from "../auth"
+import { getFirstName } from "@src/libs/utils/getFirstName";
 
 
 export default async function  Home() {
@@ -28,13 +29,13 @@ export default async function  Home() {
             .
           </li>
           <li>Save and see your changes instantly.</li>
-          
+
           <ButtonDefault link="/signin" btnClass="secondary">Sign In</ButtonDefault>
           <div>
           <img src={session?.user?.image ?? "https://images.unsplash.com/photo-1728577740843-5f29c7586afe?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} 
      alt="User Avatar" 
      className="w-16 h-16 rounded-full object-cover border-2 border-gray-300" />
-     <h1> Welcome back! {session?.user?.name} </h1>
+     <h1> Welcome back! {getFirstName(session?.user?.name)}</h1>
 
     </div>
         </ol>
