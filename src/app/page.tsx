@@ -22,7 +22,7 @@ export default function Home() {
             .
           </li>
           <li>Save and see your changes instantly.</li>
-          <ButtonDefault link="" btnClass="secondary">Sign In</ButtonDefault>
+          <ButtonDefault link="/signin" btnClass="secondary">Sign In</ButtonDefault>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">

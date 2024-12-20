@@ -1,3 +1,5 @@
+Study Rewards is a platform that gamifies studying by connecting students with their support network (parents, relatives, friends) who can offer monetary incentives for achieving study goals. The platform creates accountability and motivation through transparent study tracking and a reward system.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
